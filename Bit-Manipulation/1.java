@@ -21,7 +21,7 @@ class Main {
      int[] ans;
      ans = solution(new int[] { 1,3,4,8},new int[][] { {0,1},{1,2},{0,3},{3,3}});
      for(int temp: ans){
-       System.out.print(temp+" ");
+       output.print(temp+" ");
      }
    
  
