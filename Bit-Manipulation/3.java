@@ -29,7 +29,7 @@ class Main {
  
   }
 
-//solution inspired by blog post
+//solution inspired by blog post for O(n)
 static int solution(int[] nums){
     int max = 0,mask = 0;
         for(int i=31;i>=0;i--){
@@ -45,7 +45,8 @@ static int solution(int[] nums){
                /*
                if a^b=c, then b^c=a
                based on above property, we are assuming
-               if the the element of assumed maximum and one of elements is present in the  input array,if true then we update our max.
+               if the the element of assumed maximum and one of elements is present in the  input array,if true then 
+               we update our max.
                */
                 if(temp.contains(j^prefix)){
                     max = prefix;
